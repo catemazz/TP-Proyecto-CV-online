@@ -1,0 +1,214 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    scroll-behavior: smooth; /*para que el scroll hasta la seccion sea suave*/
+}
+
+
+html{
+    font-family:'Roboto', sans-serif;
+    text-decoration: none;
+}
+
+/* PARA QUE LAS SECCIONES OCUPEN PANTALLA COMPLETA (100vh DE ALTO):
+section{
+    min-height: 100vh;
+} */
+
+#services,
+#portfolio{
+    background-color: rgb(224, 224, 224);
+}
+
+#contact{
+    background-color: rgb(245, 181, 21);
+}
+
+.tituloseccion{
+    display:inline-flex;
+    justify-content: center;    /* NO ME SALE CENTRARLO*/
+    background-color: rgb(245, 181, 21);
+    font-size: 12px;
+    font-weight: 800;
+    padding: 3px 6px;
+}
+
+.subtituloseccion{
+    font-weight: 900;
+    justify-content:center;
+    }
+
+
+/*NAVEGADOR*/
+
+nav{
+    padding: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    }
+
+h3{
+    display: inline-flex;
+}
+
+h4{
+    font-size: 20px;
+}
+
+h5{
+    font-size: 17px;
+}
+
+h6{
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.mayuscula{
+    text-transform:uppercase;
+}
+
+ul{
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type:none;
+}
+
+li{
+    font-weight: 600;
+    margin-left: 10px;
+}
+
+a{
+    text-decoration: none;
+    }
+
+#iconosredes{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 3px;
+    }
+
+.fa-twitter,
+.fa-instagram{
+    margin-left: 10px;
+}
+
+
+/*SECCION 1 - HOME*/
+
+h1{
+    font-size: 55px;
+    
+    }
+
+h2{
+    margin-top: 20px;
+    font-weight: 200;
+}
+
+#home{
+    background-color: rgb(245, 181, 21);
+    display:flex;
+    flex-direction:row;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 180px 0;
+}
+
+.presentacion{
+    display: inline;
+    flex-direction: column;
+}
+
+.linea1{
+    display: flex;
+    flex-direction: row;
+}
+
+#linea1{
+    width:8px;
+    height: 80px;
+    border:0px;
+    background-color: rgba(201, 169, 28, 0.877);
+}
+
+.boton{
+    background-color:rgb(61, 61, 61) ;
+    border: 0px ;
+    border-radius: 2px;
+    padding: 10px;
+    color: aliceblue;
+    font-family:'Roboto', sans-serif; /*POR QUE NO SE ME PONE LA FONT FAMILY??*/
+    margin-top: 10px;
+}
+
+a{
+    color:rgb(61, 60, 60);
+    font-family: 'Roboto', sans-serif;
+    margin-left: 10px;
+}
+
+#fotoperfil{
+    width:200px;
+    height: 200px;
+    border-radius:50%;
+    border:8px solid white;
+    display:block;
+    }
+
+
+/*SECTION ABOUT ME*/
+
+.datos{
+    display: flex;
+    flex-direction: column;
+}
+
+.bold{
+    font-weight: 700;
+}
+
+.cajas{
+    display: flex;
+    justify-content: space-around;
+}
+
+
+/* SECTION SERVICES/WHAT I DO*/
+
+.icono-amarillo{
+    font-size: xx-large;
+    color: rgb(245, 181, 21)
+    }
+
+.services{
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    /* COMO LAS PONIA UNA AL LADO/ABAJO DE LA OTRA?*/
+    align-items: center;
+}
+
+
+/* SECTION RESUME*/
+.linea2{
+    height: 250px;
+    width: 2px;
+    background-color: rgb(245, 181, 21);
+    border: 0px;
+    margin-left: 15px;
+    display: flex;
+}
+
+
+/* SECTION PORTFOLIO*/
+.img-portfolio{
+    width: 150px; 
+    
+       /* CORTAR PARA QUE QUEDEN CUADRADAS??*/
+    
+}
