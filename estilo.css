@@ -29,8 +29,8 @@ section{
 }
 
 .tituloseccion{
-    display: inline-flex;
-    justify-content: center;    /* NO ME SALE CENTRARLO*/
+    display: inline;
+    justify-content: center;   /* POR QUE NO ME SALE CENTRARLO?*/
     background-color: rgb(245, 181, 21);
     font-size: 12px;
     font-weight: 800;
@@ -173,11 +173,12 @@ a{
     }
 
 
-/*SECTION ABOUT ME*/
+/*SECTION 2 - ABOUT ME*/
 
 .cajas-datos{
     display: flex;
     justify-content: center;
+    margin-bottom: 20px;
 }
 
 .datos{
@@ -191,13 +192,15 @@ a{
 .cajas-about{
     display: flex;
     justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
 }
 
 .hi-im{
-    width: 680px;
+    width: 745px;
     display: inline-flex;
     flex-direction: column;
-    margin-top: 10px;
+    margin: 10px 50px 20px 0;
     padding-right: 20px;
 }
 
@@ -205,18 +208,31 @@ a{
     text-decoration: underline rgb(245, 181, 21) 3px;
 }
 
+.experiencia{
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    }
+
 .circulo{
     width: 70px;
     height: 70px;
     background-color: rgb(245, 181, 21);
     border-radius: 50%;
-    display: inline-flex;
-    justify-content: center;
+    display: flex;
+    justify-content: center; 
     align-items: center;
+    font-size: 6.2em;
+    font-weight: 700;
+    margin-bottom: 10px;
 }
 
 
 /* SECTION SERVICES/WHAT I DO*/
+
+#services{
+    justify-content: center;
+}
 
 .icono-amarillo{
     font-size: xx-large;
@@ -227,19 +243,19 @@ a{
     text-align: justify;
 }
 
+.contenedor_servicios{
+    display: inline-flex;
+    justify-content: center; /* CENTRAR*/
+    flex-wrap: wrap;
+    width: 800px;
+}
+
 .servicios{
     width: 300px;
     text-align:center;
     margin: 40px 50px;
     }
-
-.cajas_servicios{
     
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
 
 /* SECTION RESUME*/
 .linea2{
@@ -254,9 +270,13 @@ a{
 
 /* SECTION PORTFOLIO*/
 
+.contenedor-imgs{
+/*     display: flex;
+ *//*     flex-wrap: wrap;
+ */}
 
 .img-portfolio{
-    width: 150px; 
+    height: 150px; 
     
     
        /* CORTAR PARA QUE QUEDEN CUADRADAS??*/
