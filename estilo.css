@@ -8,10 +8,11 @@
     box-sizing: border-box;
 }
 
-
 html{
     font-family:'Roboto', sans-serif;
     text-decoration: none;
+    max-width: 1600px;
+    margin: auto;
 }
 
 /* PARA QUE LAS SECCIONES OCUPEN PANTALLA COMPLETA (100vh DE ALTO):
@@ -29,13 +30,13 @@ section{
 }
 
 .tituloseccion{
-    display: inline;
+    display: inline-flex;
     justify-content: center;   /* POR QUE NO ME SALE CENTRARLO?*/
     background-color: rgb(245, 181, 21);
     font-size: 12px;
-    font-weight: 800;
+    font-weight: 900;
     padding: 3px 6px;
-    margin-top: 20px;
+    margin: 20px auto;
 }
 
 .subtituloseccion{
@@ -175,6 +176,11 @@ a{
 
 /*SECTION 2 - ABOUT ME*/
 
+/* #about{
+    display: flex;
+    justify-content: center;
+} */
+
 .cajas-datos{
     display: flex;
     justify-content: center;
@@ -230,9 +236,11 @@ a{
 
 /* SECTION SERVICES/WHAT I DO*/
 
-#services{
+/* #services{
+    display: flex;
+    flex-direction: column;
     justify-content: center;
-}
+} */
 
 .icono-amarillo{
     font-size: xx-large;
@@ -245,9 +253,10 @@ a{
 
 .contenedor_servicios{
     display: inline-flex;
-    justify-content: center; /* CENTRAR*/
+    justify-content: center; /* CENTRADO??? */
     flex-wrap: wrap;
     width: 800px;
+    margin: 0 auto;
 }
 
 .servicios{
@@ -263,22 +272,53 @@ a{
     width: 2px;
     background-color: rgb(245, 181, 21);
     border: 0px;
-    margin-left: 15px;
+    margin: 0 15px;
+    }
+
+.caja-resume{
     display: flex;
+
 }
 
 
 /* SECTION PORTFOLIO*/
 
+/* #portfolio{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+} */
+
 .contenedor-imgs{
-/*     display: flex;
- *//*     flex-wrap: wrap;
- */}
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 900px;
+    margin: 20px auto;
+}
 
 .img-portfolio{
     height: 150px; 
-    
-    
-       /* CORTAR PARA QUE QUEDEN CUADRADAS??*/
-    
+    margin: 10px 10px;
+               
 }
+
+.objectfit > img{       /* COMO LAS CORTO MAS CENTRADAS??*/
+    width: 250px;
+	height: 250px;
+	object-fit: cover;
+}
+
+
+
+
+#contact{
+    display: flex;
+    justify-content: center;
+}
+
+.caja-contact{
+    width: 600px;
+    margin: 20px 20px;
+}
+
