@@ -21,7 +21,8 @@ section{
 } */
 
 #services,
-#portfolio{
+#portfolio,
+footer{
     background-color: rgb(224, 224, 224);
 }
 
@@ -31,7 +32,8 @@ section{
 
 .tituloseccion{
     display: inline-flex;
-    justify-content: center;   /* POR QUE NO ME SALE CENTRARLO?*/
+       /* POR QUE NO ME SALE CENTRARLO?*/
+    justify-content: space-evenly;
     background-color: rgb(245, 181, 21);
     font-size: 12px;
     font-weight: 900;
@@ -43,8 +45,12 @@ section{
     font-weight: 900;
     justify-content:center;
     text-align: center;
+    margin-bottom: 20px;
     }
 
+img{
+    max-width: 100%;
+}
 
 /*NAVEGADOR*/
 
@@ -242,6 +248,7 @@ a{
     justify-content: center;
 } */
 
+
 .icono-amarillo{
     font-size: xx-large;
     color: rgb(245, 181, 21);
@@ -252,11 +259,12 @@ a{
 }
 
 .contenedor_servicios{
-    display: inline-flex;
-    justify-content: center; /* CENTRADO??? */
+    display: flex;
     flex-wrap: wrap;
     width: 800px;
     margin: 0 auto;
+    /* margin-bottom: 30px; */
+    /* align-content: normal; */
 }
 
 .servicios{
@@ -267,6 +275,11 @@ a{
     
 
 /* SECTION RESUME*/
+
+#resume{
+    align-items: center;
+}
+
 .linea2{
     height: 250px;
     width: 2px;
@@ -275,9 +288,29 @@ a{
     margin: 0 15px;
     }
 
-.caja-resume{
+.dos-columnas{
     display: flex;
+    width: 80%;
+    justify-content: center;
+    margin: 0 auto;
+}
 
+.misma-linea{
+    display: flex;
+}
+
+.columna{
+    display: flex;
+    flex-direction: column;
+}
+
+/* .caja-resume{
+    display: flex;
+    flex-direction: column;
+} */
+
+.info-resume{
+    margin: 5px auto;
 }
 
 
@@ -310,15 +343,33 @@ a{
 }
 
 
-
+/* SECTION CONTACT*/
 
 #contact{
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
 }
 
 .caja-contact{
-    width: 600px;
+    width: 400px;
     margin: 20px 20px;
 }
 
+#name,
+#email,
+#message{
+    display: block;
+    margin-bottom: 20px;
+}
+
+input, textarea{
+    border: none;
+    border-bottom: 1px solid rgb(44, 44, 44);
+    background-color: transparent;
+    margin-top: 5px;
+}
+
+
+footer{
+    font-size: 0.8em;
+}
